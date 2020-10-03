@@ -56,7 +56,10 @@ src: url("font.otf")
 function Start(){
 
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-var confirm = prompt("Хотите ли вы перейти на мобильную версию сайта?");
+var confirm = confirm("Хотите ли вы перейти на мобильную версию сайта?");
+if(confirm){
+window.location = 'home_android.html';
+}
 } else {
 
 }
